@@ -1,0 +1,1972 @@
+{
+  "schemaVersion": 1,
+  "wedding": {
+    "title": "广州庭院婚礼",
+    "date": "2027-01-02",
+    "timezone": "Asia/Shanghai",
+    "venue": "广州西餐厅及庭院"
+  },
+  "release": {
+    "version": "20261109-01",
+    "updatedAt": "2026-11-09T17:07:00+08:00",
+    "changes": [
+      "首次发布公开执行表。场地准入、桌数、供应商班次及雨备耗时待确认。"
+    ],
+    "history": []
+  },
+  "roles": {
+    "coordinator": {
+      "name": "统筹",
+      "duty": "统一发出开场、音响、切换和重开口令，协调延误并安排开场与晚班替补。",
+      "partners": [
+        "restaurant",
+        "welcome",
+        "audio"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "restaurant": {
+      "name": "餐厅",
+      "duty": "由餐厅经理协调准入、厨房、服务、室内场地确认及撤场验收。",
+      "partners": [
+        "coordinator",
+        "welcome",
+        "decor"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "welcome": {
+      "name": "迎宾",
+      "duty": "负责签到、座位引导及送客，优先协助长辈和行动不便的宾客。",
+      "partners": [
+        "restaurant",
+        "coordinator",
+        "helpers"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "photo": {
+      "name": "摄影摄像",
+      "duty": "确认机位、合照顺序和备选光线条件，按统筹指令抓拍与转场。",
+      "partners": [
+        "coordinator",
+        "couple",
+        "helpers"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "styling": {
+      "name": "妆造",
+      "duty": "负责妆发、更衣及补妆，留场时长由统筹和妆造确认。",
+      "partners": [
+        "couple",
+        "helpers",
+        "coordinator"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "audio": {
+      "name": "音响",
+      "duty": "彩排核对所有音乐提示，备离线音乐、备用麦克风和电池。仪式只接统筹信号。",
+      "partners": [
+        "coordinator",
+        "photo",
+        "decor"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "decor": {
+      "name": "布置",
+      "duty": "负责卸货、搭建和撤场，按场地交付及雨备口令调整。",
+      "partners": [
+        "restaurant",
+        "coordinator",
+        "audio"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "couple": {
+      "name": "新人",
+      "duty": "按统筹口令完成迎宾、仪式、合照、换装、晚宴及送客。",
+      "partners": [
+        "coordinator",
+        "styling",
+        "helpers"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    },
+    "helpers": {
+      "name": "亲友协助",
+      "duty": "按分工承担新娘陪同、入场协助、戒指保管、合照叫名或宾客协助。",
+      "partners": [
+        "welcome",
+        "photo",
+        "coordinator"
+      ],
+      "backup": "待确认",
+      "contact": "联系方式见工作群"
+    }
+  },
+  "locations": {
+    "venue": {
+      "name": "场地",
+      "note": "准入、卸货和午市限制待餐厅确认。",
+      "status": "待确认"
+    },
+    "setup": {
+      "name": "庭院、迎宾区及餐厅",
+      "note": "按场地交付顺序布置。",
+      "status": "待确认"
+    },
+    "prep": {
+      "name": "准备室",
+      "note": "妆造及休息暂设于餐厅准备室。",
+      "status": "待确认"
+    },
+    "camera": {
+      "name": "场地及准备区",
+      "note": "机位经摄影踩点后确认。",
+      "status": "待确认"
+    },
+    "ceremony": {
+      "name": "仪式区",
+      "note": "以统筹宣布的场地为准。",
+      "status": "待确认"
+    },
+    "inspection": {
+      "name": "庭院、迎宾及室内区",
+      "note": "逐区验收。",
+      "status": "待确认"
+    },
+    "portrait": {
+      "name": "拍摄区",
+      "note": "摄影踩点后确认机位。",
+      "status": "待确认"
+    },
+    "welcome": {
+      "name": "迎宾区",
+      "note": "以餐厅交付的区域为准。",
+      "status": "待确认"
+    },
+    "welcome-open": {
+      "name": "迎宾区及开放区域",
+      "note": "参观范围待餐厅确认。",
+      "status": "待确认"
+    },
+    "transition": {
+      "name": "仪式区及合照点",
+      "note": "经统筹确认后交接。",
+      "status": "待确认"
+    },
+    "group": {
+      "name": "合照区",
+      "note": "等摄影确认机位和站位。",
+      "status": "待确认"
+    },
+    "rest": {
+      "name": "室内休息区",
+      "note": "座位及供应点待确认。",
+      "status": "待确认"
+    },
+    "portrait-backup": {
+      "name": "拍摄区或室内备选机位",
+      "note": "先核对光线和机位。",
+      "status": "待确认"
+    },
+    "dinner": {
+      "name": "晚宴区",
+      "note": "桌位、厨房服务及复位待确认。",
+      "status": "待确认"
+    },
+    "exit": {
+      "name": "出口",
+      "note": "迎宾确认交通指引。",
+      "status": "待确认"
+    },
+    "a": {
+      "name": "庭院仪式区",
+      "note": "统筹验收座位、通道、地面与设备。",
+      "status": "待确认"
+    },
+    "b": {
+      "name": "有遮蔽区",
+      "note": "可用场地、座位和进出路线待确认。",
+      "status": "待确认"
+    },
+    "c": {
+      "name": "室内仪式区",
+      "note": "全员容量、等候区及复位用时待确认。",
+      "status": "待确认"
+    },
+    "b-photo": {
+      "name": "有遮蔽区方案合照点",
+      "note": "合照点和转场待确认。",
+      "status": "待确认"
+    },
+    "c-photo": {
+      "name": "室内方案合照点",
+      "note": "合照点和转场待确认。",
+      "status": "待确认"
+    }
+  },
+  "stages": [
+    {
+      "id": "prep",
+      "name": "准备"
+    },
+    {
+      "id": "welcome",
+      "name": "迎宾"
+    },
+    {
+      "id": "ceremony",
+      "name": "仪式"
+    },
+    {
+      "id": "photos",
+      "name": "合照与休息"
+    },
+    {
+      "id": "dinner",
+      "name": "晚宴"
+    },
+    {
+      "id": "close",
+      "name": "送客与撤场"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "coordinator-arrival",
+      "stage": "prep",
+      "title": "统筹及餐厅到场",
+      "start": "2027-01-02T07:30:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "venue",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant"
+      ],
+      "status": "暂排",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "到场后报到，核对本岗位作业区域。",
+      "steps": [],
+      "startSignal": "按发布排程到场，准入以餐厅确认为准。",
+      "handoff": "向统筹报到并转入本岗位准备。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "opening",
+      "stage": "prep",
+      "title": "开场与验点",
+      "start": "2027-01-02T07:30:00+08:00",
+      "end": "2027-01-02T08:00:00+08:00",
+      "kind": "range",
+      "location": "venue",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant"
+      ],
+      "status": "暂排",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "统筹与餐厅负责人 07:30 到场，核对卸货、用电、准备室、雨备区、动线和午市限制。",
+      "steps": [],
+      "startSignal": "餐厅确认准入、午市和撤场限制后交付。",
+      "handoff": "餐厅交付后通知布置进场。",
+      "supplies": [
+        "用电及卸货核对表"
+      ],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "decor-arrival",
+      "stage": "prep",
+      "title": "布置到场",
+      "start": "2027-01-02T08:00:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "setup",
+      "lead": "decor",
+      "withRoles": [],
+      "status": "暂排",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "到场后报到，核对本岗位作业区域。",
+      "steps": [],
+      "startSignal": "按发布排程到场，准入以餐厅确认为准。",
+      "handoff": "向统筹报到并转入本岗位准备。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "setup",
+      "stage": "prep",
+      "title": "搭建与布置",
+      "start": "2027-01-02T08:00:00+08:00",
+      "end": "2027-01-02T11:45:00+08:00",
+      "kind": "range",
+      "location": "setup",
+      "lead": "decor",
+      "withRoles": [
+        "restaurant"
+      ],
+      "status": "暂排",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "08:00 到场，08:00–08:30 卸货，优先搭建庭院和迎宾区。桌位按场地交付顺序布置，时长按合同及工作量倒推。",
+      "steps": [
+        "08:00–08:30 卸货。"
+      ],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "交由统筹和餐厅验收。",
+      "supplies": [
+        "搭建物资",
+        "餐桌及庭院布置物资"
+      ],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "styling-arrival",
+      "stage": "prep",
+      "title": "妆造到场",
+      "start": "2027-01-02T09:00:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "prep",
+      "lead": "styling",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "到场后报到，核对本岗位作业区域。",
+      "steps": [],
+      "startSignal": "按发布排程到场，准入以餐厅确认为准。",
+      "handoff": "向统筹报到并转入本岗位准备。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "makeup",
+      "stage": "prep",
+      "title": "新娘妆发与更衣",
+      "start": "2027-01-02T09:00:00+08:00",
+      "end": "2027-01-02T12:00:00+08:00",
+      "kind": "range",
+      "location": "prep",
+      "lead": "styling",
+      "withRoles": [
+        "couple"
+      ],
+      "status": "暂排",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "09:00 到场，09:20 开妆，11:40 起更衣。按试妆校准时长，亲友妆造另排人手。若改为场外妆造，重新倒推通勤、停车、抵达缓冲和开妆。",
+      "steps": [
+        "09:20 开妆，按试妆校准时长。",
+        "11:40 起更衣。"
+      ],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "通知统筹及摄影已完成妆发更衣。",
+      "supplies": [
+        "礼服",
+        "妆发用品"
+      ],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "photo-arrival",
+      "stage": "prep",
+      "title": "摄影摄像到场",
+      "start": "2027-01-02T10:45:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "camera",
+      "lead": "photo",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "到场后报到，核对本岗位作业区域。",
+      "steps": [],
+      "startSignal": "按发布排程到场，准入以餐厅确认为准。",
+      "handoff": "向统筹报到并转入本岗位准备。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "camera-setup",
+      "stage": "prep",
+      "title": "影像准备",
+      "start": "2027-01-02T10:45:00+08:00",
+      "end": "2027-01-02T12:00:00+08:00",
+      "kind": "range",
+      "location": "camera",
+      "lead": "photo",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "10:45 到场，先布机位，再拍妆发尾段及场景。覆盖到 20:30 的排期跨度为 9 小时 45 分钟，收工、送客镜头及轮休核对合同。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "机位和备选拍摄条件同步统筹。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "audio-arrival",
+      "stage": "prep",
+      "title": "音响到场",
+      "start": "2027-01-02T11:00:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "ceremony",
+      "lead": "audio",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "到场后报到，核对本岗位作业区域。",
+      "steps": [],
+      "startSignal": "按发布排程到场，准入以餐厅确认为准。",
+      "handoff": "向统筹报到并转入本岗位准备。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "soundcheck",
+      "stage": "prep",
+      "title": "音响设备试音",
+      "start": "2027-01-02T11:00:00+08:00",
+      "end": "2027-01-02T12:00:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "audio",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "测试麦克风、备用设备和音乐，确认覆盖范围及轮休。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "向统筹确认信号及离线备份。",
+      "supplies": [
+        "离线音乐",
+        "备用麦克风",
+        "备用电池"
+      ],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "inspection",
+      "stage": "prep",
+      "title": "场地验收",
+      "start": "2027-01-02T11:45:00+08:00",
+      "end": "2027-01-02T12:15:00+08:00",
+      "kind": "range",
+      "location": "inspection",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "验收庭院、晚宴、迎宾及室内备选区，确认午餐和供应商轮休。轮休前交接对讲、时间表和未完成事项。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "同步验收结果、午餐及轮休。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "weather-check",
+      "stage": "prep",
+      "title": "天气与场地初判",
+      "start": "2027-01-02T11:45:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "venue",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "复核天气、地面及设备条件，餐厅确认备选区能否开放。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "结果同步统筹。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "天气预案与切换／上午准备与迎宾"
+    },
+    {
+      "id": "lunch",
+      "stage": "prep",
+      "title": "新人午餐休息",
+      "start": "2027-01-02T12:00:00+08:00",
+      "end": "2027-01-02T12:30:00+08:00",
+      "kind": "range",
+      "location": "prep",
+      "lead": "coordinator",
+      "withRoles": [
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "安排助理送餐及饮水，给新人各保留连续 30 分钟，摄影与统筹避开该时段。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "12:30 将新人交给摄影。",
+      "supplies": [],
+      "helperDuty": "送餐与饮水",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "portraits-before",
+      "stage": "prep",
+      "title": "迎宾前肖像",
+      "start": "2027-01-02T12:30:00+08:00",
+      "end": "2027-01-02T13:00:00+08:00",
+      "kind": "range",
+      "location": "portrait",
+      "lead": "photo",
+      "withRoles": [
+        "coordinator",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "若保留仪式首次见面，分别拍摄新人，统筹协调动线。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "13:00 交给统筹彩排。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "welcome-arrival",
+      "stage": "prep",
+      "title": "迎宾组到场",
+      "start": "2027-01-02T13:00:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "welcome",
+      "lead": "welcome",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "完成签到、座位查询、迎宾动线及现场简报准备。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "结果同步统筹。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "rehearsal",
+      "stage": "prep",
+      "title": "仪式彩排及简报",
+      "start": "2027-01-02T13:00:00+08:00",
+      "end": "2027-01-02T13:25:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "photo",
+        "welcome",
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "带新人或代走人员、入场协助、戒指保管和各相关组走位。复核雨备、入场、誓言、退场及晚宴收尾信号。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "同步待命岗位，安排新人休息。",
+      "supplies": [
+        "对讲",
+        "离线音乐",
+        "戒指"
+      ],
+      "helperDuty": "入场协助及戒指保管走位",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "rest",
+      "stage": "prep",
+      "title": "新人休息",
+      "start": "2027-01-02T13:25:00+08:00",
+      "end": "2027-01-02T14:25:00+08:00",
+      "kind": "range",
+      "location": "prep",
+      "lead": "coordinator",
+      "withRoles": [
+        "styling",
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "协调新娘回准备室休息，由陪同人安排饮水、洗手间及补妆。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "新娘留在准备区，等候仪式预备。",
+      "supplies": [],
+      "helperDuty": "新娘陪同",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "weather-decision",
+      "stage": "prep",
+      "title": "宣布仪式场地",
+      "start": "2027-01-02T13:30:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "venue",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant",
+        "welcome",
+        "decor",
+        "audio",
+        "photo"
+      ],
+      "status": "暂定",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "根据实测切换时长和机动时间倒推定场，实测耗时更长时提前决定。",
+      "steps": [],
+      "startSignal": "餐厅确认场地可用，由统筹宣布方案。",
+      "handoff": "同步各组采用方案及待确认事项。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "天气预案与切换／上午准备与迎宾"
+    },
+    {
+      "id": "welcome-ready",
+      "stage": "prep",
+      "title": "迎宾区交付与就位",
+      "start": "2027-01-02T14:15:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "welcome",
+      "lead": "welcome",
+      "withRoles": [
+        "coordinator",
+        "restaurant"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "迎宾组就位，复核开放区域、接待物资和引导安排。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "准备好后向统筹回报，等候迎宾。",
+      "supplies": [
+        "签到及座位查询资料"
+      ],
+      "helperDuty": "",
+      "source": "天气预案与切换／上午准备与迎宾"
+    },
+    {
+      "id": "guest-welcome",
+      "stage": "welcome",
+      "title": "迎宾与自由参观",
+      "start": "2027-01-02T14:25:00+08:00",
+      "end": "2027-01-02T15:05:00+08:00",
+      "kind": "range",
+      "location": "welcome-open",
+      "lead": "welcome",
+      "withRoles": [
+        "restaurant",
+        "couple",
+        "coordinator"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "新郎迎宾。开放签到、座位查询、迎宾饮品、照片展示和拍照点。统筹持续复核天气。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "15:05 迎宾转入入座引导。",
+      "supplies": [
+        "签到用品",
+        "迎宾饮品",
+        "照片展示"
+      ],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "garden-seating",
+      "stage": "welcome",
+      "title": "引导宾客进入仪式区",
+      "start": "2027-01-02T15:05:00+08:00",
+      "end": "2027-01-02T15:15:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "welcome",
+      "withRoles": [
+        "coordinator"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "长辈及行动不便宾客优先入座。迟到宾客先等候，新娘入场结束后择机引导。",
+      "steps": [
+        "15:10 新郎离开迎宾区，由迎宾继续接待。",
+        "迟到宾客在已确认的侧入口等候，新娘入场结束后择机入座。"
+      ],
+      "startSignal": "15:05 起引导，按已宣布的场地方案执行。",
+      "handoff": "入座情况回报统筹。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "ceremony-ready",
+      "stage": "welcome",
+      "title": "仪式预备",
+      "start": "2027-01-02T15:15:00+08:00",
+      "end": "2027-01-02T15:20:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "photo",
+        "welcome",
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "确认新人、戒指、音响和机位就绪。入场协助引导新娘在预定入口待命。 从宾客看不到的已确认路线抵达入口。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "准备完成后统筹发出开场信号。",
+      "supplies": [
+        "戒指",
+        "麦克风",
+        "离线音乐"
+      ],
+      "helperDuty": "入场协助、戒指保管",
+      "source": "上午准备与迎宾"
+    },
+    {
+      "id": "groom-opening",
+      "stage": "ceremony",
+      "title": "新郎开场",
+      "start": "2027-01-02T15:20:00+08:00",
+      "end": "2027-01-02T15:21:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "photo",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "新郎就位并向宾客问候，音响渐弱。",
+      "steps": [],
+      "startSignal": "统筹确认可开场。",
+      "handoff": "交新郎继续发言。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "庭院仪式与合照"
+    },
+    {
+      "id": "groom-speech",
+      "stage": "ceremony",
+      "title": "新郎发言",
+      "start": "2027-01-02T15:21:00+08:00",
+      "end": "2027-01-02T15:29:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "couple",
+        "helpers",
+        "photo"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "新郎自我介绍，以故事引出新娘，入场协助确认新娘就绪。",
+      "steps": [],
+      "startSignal": "统筹向新郎示意。",
+      "handoff": "约定引入句后，统筹示意音响。",
+      "supplies": [],
+      "helperDuty": "入场协助确认新娘就绪",
+      "source": "庭院仪式与合照"
+    },
+    {
+      "id": "ceremony-entrance",
+      "stage": "ceremony",
+      "title": "新娘入场与相遇",
+      "start": "2027-01-02T15:29:00+08:00",
+      "end": "2027-01-02T15:33:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "photo",
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "音响按统筹口令播放入场曲。新人相遇、牵手或拥抱，摄影同步抓拍。",
+      "steps": [],
+      "startSignal": "新郎说完约定引入句后，等待统筹示意起曲。",
+      "handoff": "新人相遇后衔接誓言。",
+      "supplies": [
+        "入场曲"
+      ],
+      "helperDuty": "入场协助",
+      "source": "庭院仪式与合照"
+    },
+    {
+      "id": "vows",
+      "stage": "ceremony",
+      "title": "双方誓言",
+      "start": "2027-01-02T15:33:00+08:00",
+      "end": "2027-01-02T15:42:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "photo",
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "新人依次发言，入场协助接手捧花，音响降低音乐。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "完成后统筹示意递戒指。",
+      "supplies": [
+        "手捧花",
+        "麦克风"
+      ],
+      "helperDuty": "入场协助接手捧花",
+      "source": "庭院仪式与合照"
+    },
+    {
+      "id": "rings",
+      "stage": "ceremony",
+      "title": "交换戒指及亲吻",
+      "start": "2027-01-02T15:42:00+08:00",
+      "end": "2027-01-02T15:46:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "photo",
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "摄影兼顾新人和宾客反应。",
+      "steps": [],
+      "startSignal": "戒指保管人按统筹示意递交，亲吻后按统筹信号起音乐。",
+      "handoff": "亲吻后起音乐并转入收束。",
+      "supplies": [
+        "戒指"
+      ],
+      "helperDuty": "戒指保管及递交",
+      "source": "庭院仪式与合照"
+    },
+    {
+      "id": "exit-ceremony",
+      "stage": "ceremony",
+      "title": "收束与退场",
+      "start": "2027-01-02T15:46:00+08:00",
+      "end": "2027-01-02T15:50:00+08:00",
+      "kind": "range",
+      "location": "transition",
+      "lead": "coordinator",
+      "withRoles": [
+        "welcome",
+        "audio",
+        "photo",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "新人致谢并提示宾客留步，迎宾协助引导至预定合照点，音响按彩排口令配合。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "迎宾引导到合照点，摄影待命。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "庭院仪式与合照"
+    },
+    {
+      "id": "ceremony-buffer",
+      "stage": "ceremony",
+      "title": "仪式机动",
+      "start": "2027-01-02T15:50:00+08:00",
+      "end": "2027-01-02T15:55:00+08:00",
+      "kind": "range",
+      "location": "ceremony",
+      "lead": "coordinator",
+      "withRoles": [
+        "photo",
+        "welcome",
+        "audio"
+      ],
+      "status": "机动",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "预留给掌声、入场及发言超时，提前结束可直接开始合照。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "统筹交接摄影开始全体合照。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "庭院仪式与合照"
+    },
+    {
+      "id": "group-photo",
+      "stage": "photos",
+      "title": "全体合照",
+      "start": "2027-01-02T15:55:00+08:00",
+      "end": "2027-01-02T16:05:00+08:00",
+      "kind": "range",
+      "location": "group",
+      "lead": "photo",
+      "withRoles": [
+        "coordinator",
+        "welcome"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "摄影预定机位和站位，长辈及行动不便宾客优先安排座位。",
+      "steps": [],
+      "startSignal": "统筹示意后开拍。",
+      "handoff": "通知合照协助人集合家人。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "合照顺序与宾客安排"
+    },
+    {
+      "id": "family-photos",
+      "stage": "photos",
+      "title": "家人合照",
+      "start": "2027-01-02T16:05:00+08:00",
+      "end": "2027-01-02T16:17:00+08:00",
+      "kind": "range",
+      "location": "group",
+      "lead": "photo",
+      "withRoles": [
+        "coordinator",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "先拍需优先离场或休息的家人，双方各一位协助者叫名并准备下一组。",
+      "steps": [
+        "合照协助人通过工作群领取组别名单。"
+      ],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "叫名协助人准备朋友合照。",
+      "supplies": [
+        "合照叫名清单（见工作群）"
+      ],
+      "helperDuty": "双方各指定一人叫名并准备下一组",
+      "source": "合照顺序与宾客安排"
+    },
+    {
+      "id": "guest-rest",
+      "stage": "photos",
+      "title": "室内休息与小食",
+      "start": "2027-01-02T16:05:00+08:00",
+      "end": "2027-01-02T17:40:00+08:00",
+      "kind": "range",
+      "location": "rest",
+      "lead": "restaurant",
+      "withRoles": [
+        "welcome",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "完成合照的宾客可随时入内。补充饮品小食并安排座位，双方亲友可协助介绍宾客。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "17:40 餐厅引导入席。",
+      "supplies": [],
+      "helperDuty": "协助介绍宾客",
+      "source": "合照顺序与宾客安排"
+    },
+    {
+      "id": "friend-photos",
+      "stage": "photos",
+      "title": "朋友合照",
+      "start": "2027-01-02T16:17:00+08:00",
+      "end": "2027-01-02T16:30:00+08:00",
+      "kind": "range",
+      "location": "group",
+      "lead": "photo",
+      "withRoles": [
+        "coordinator",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "按男方、女方和共同朋友的预排顺序拍摄，自由合照视余量安排。婚前 14 天按组数校准全程 35 分钟。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "摄影转入新人单拍，完成合照的宾客可入内。",
+      "supplies": [],
+      "helperDuty": "合照叫名及换组",
+      "source": "合照顺序与宾客安排"
+    },
+    {
+      "id": "couple-portraits",
+      "stage": "photos",
+      "title": "新人单独拍摄",
+      "start": "2027-01-02T16:30:00+08:00",
+      "end": "2027-01-02T17:00:00+08:00",
+      "kind": "range",
+      "location": "portrait-backup",
+      "lead": "photo",
+      "withRoles": [
+        "coordinator",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "走踩点路线，光线不理想时用室内机位。婚前在相近季节 16:00–17:00 踩点，核对庭院光线。",
+      "steps": [],
+      "startSignal": "17:00 新人回到宾客中。",
+      "handoff": "17:00 新人回到宾客中。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "合照顺序与宾客安排"
+    },
+    {
+      "id": "light-portraits",
+      "stage": "photos",
+      "title": "夕阳方向补拍",
+      "start": "2027-01-02T16:50:00+08:00",
+      "end": "2027-01-02T17:00:00+08:00",
+      "kind": "range",
+      "location": "portrait",
+      "lead": "photo",
+      "withRoles": [
+        "couple"
+      ],
+      "status": "计划",
+      "optional": true,
+      "assignmentPending": false,
+      "action": "由摄影现场判断光线，17:00 准时结束。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "17:00 结束并返回。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "日落与现场光线"
+    },
+    {
+      "id": "mingle",
+      "stage": "photos",
+      "title": "新人回到宾客中",
+      "start": "2027-01-02T17:00:00+08:00",
+      "end": "2027-01-02T17:20:00+08:00",
+      "kind": "range",
+      "location": "rest",
+      "lead": "coordinator",
+      "withRoles": [
+        "photo",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "自由聊天或随手合照，统筹提醒新人 17:20 离开准备晚宴。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "17:20 通知新人及妆造开始换装。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "change",
+      "stage": "dinner",
+      "title": "换装、补妆与短休",
+      "start": "2027-01-02T17:20:00+08:00",
+      "end": "2027-01-02T18:00:00+08:00",
+      "kind": "range",
+      "location": "prep",
+      "lead": "styling",
+      "withRoles": [
+        "coordinator",
+        "couple",
+        "helpers"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "化妆师与陪同人协助更衣、补妆、洗手间及饮水，留场须核对合同。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "17:55 回报统筹新人是否就绪。",
+      "supplies": [
+        "晚宴礼服",
+        "补妆用品",
+        "饮水"
+      ],
+      "helperDuty": "新娘陪同",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "dinner-seating",
+      "stage": "dinner",
+      "title": "引导宾客入席",
+      "start": "2027-01-02T17:40:00+08:00",
+      "end": "2027-01-02T18:00:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "restaurant",
+      "withRoles": [
+        "welcome",
+        "coordinator"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "引导落座、核对儿童餐和饮食需求，统筹与餐厅经理确认第一道菜时间。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "与统筹确认首道菜信号。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "dinner-ready",
+      "stage": "dinner",
+      "title": "确认新人和音响就绪",
+      "start": "2027-01-02T17:55:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "dinner",
+      "lead": "coordinator",
+      "withRoles": [
+        "styling",
+        "audio",
+        "couple",
+        "restaurant"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "统筹确认新人及音响可按计划入场。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "就绪后由统筹发出入场口令。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "dinner-entry",
+      "stage": "dinner",
+      "title": "新人入场及欢迎",
+      "start": "2027-01-02T18:00:00+08:00",
+      "end": "2027-01-02T18:05:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "restaurant",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "音响播放入场曲，新人简短欢迎，餐厅等候确认信号。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "统筹与餐厅同步开餐信号。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "starter",
+      "stage": "dinner",
+      "title": "前菜出餐",
+      "start": "2027-01-02T18:05:00+08:00",
+      "end": null,
+      "kind": "point",
+      "location": "dinner",
+      "lead": "restaurant",
+      "withRoles": [
+        "coordinator"
+      ],
+      "status": "待确认",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "18:05 为原表计划时间，须与餐厅锁定。",
+      "steps": [],
+      "startSignal": "按确认信号出餐，若预计延误，由统筹和餐厅经理另定开餐信号并通知宾客。",
+      "handoff": "餐厅按约定节奏继续服务。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "dinner-service",
+      "stage": "dinner",
+      "title": "正式用餐",
+      "start": "2027-01-02T18:05:00+08:00",
+      "end": "2027-01-02T19:25:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "restaurant",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "按出餐节奏上前菜、汤及主菜。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "餐厅同步甜品与活动窗口。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "table-visits",
+      "stage": "dinner",
+      "title": "新人逐桌交流",
+      "start": "2027-01-02T18:45:00+08:00",
+      "end": "2027-01-02T19:15:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant",
+        "couple"
+      ],
+      "status": "暂排",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "暂留 30 分钟，每桌按约 3 分钟另加转桌时间，桌数确定后重排。",
+      "steps": [],
+      "startSignal": "餐厅确认出餐空档。",
+      "handoff": "将出餐节奏交回餐厅。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "dessert",
+      "stage": "dinner",
+      "title": "甜品及茶咖啡",
+      "start": "2027-01-02T19:25:00+08:00",
+      "end": "2027-01-02T19:45:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "restaurant",
+      "withRoles": [],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "甜品、咖啡及茶按餐厅安排供应。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "向统筹确认主要出餐已结束。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "cake",
+      "stage": "dinner",
+      "title": "切蛋糕",
+      "start": "2027-01-02T19:25:00+08:00",
+      "end": "2027-01-02T19:45:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "restaurant",
+      "withRoles": [
+        "coordinator",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": true,
+      "assignmentPending": true,
+      "action": "若蛋糕供宾客食用，餐厅在甜品时段同步分切上桌。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "与甜品同步上桌。",
+      "supplies": [
+        "蛋糕及分切用具"
+      ],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "quiz",
+      "stage": "dinner",
+      "title": "新人默契问答",
+      "start": "2027-01-02T19:45:00+08:00",
+      "end": "2027-01-02T20:00:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant",
+        "audio",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "新人问答，宾客自愿猜答案。",
+      "steps": [],
+      "startSignal": "餐厅确认主要出餐结束后开始。",
+      "handoff": "交回自由交流时段。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "free-time",
+      "stage": "dinner",
+      "title": "自由交流及可选互动",
+      "start": "2027-01-02T20:00:00+08:00",
+      "end": "2027-01-02T20:20:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "coordinator",
+      "withRoles": [
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "视现场节奏加入桌边祝福或留言，可选互动控制在 10 分钟以内。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "统筹提示新人准备致谢。",
+      "supplies": [
+        "祝福或留言用品（如启用）"
+      ],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "thanks",
+      "stage": "close",
+      "title": "结束致谢与收尾曲",
+      "start": "2027-01-02T20:20:00+08:00",
+      "end": "2027-01-02T20:30:00+08:00",
+      "kind": "range",
+      "location": "dinner",
+      "lead": "coordinator",
+      "withRoles": [
+        "audio",
+        "photo",
+        "welcome",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "新人致谢约 3–5 分钟，歌曲按实际曲长播放。统筹提醒送客人员就位。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "提醒迎宾与送客人员就位。",
+      "supplies": [],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "farewell",
+      "stage": "close",
+      "title": "送客",
+      "start": "2027-01-02T20:30:00+08:00",
+      "end": "2027-01-02T21:00:00+08:00",
+      "kind": "range",
+      "location": "exit",
+      "lead": "welcome",
+      "withRoles": [
+        "coordinator",
+        "couple"
+      ],
+      "status": "计划",
+      "optional": false,
+      "assignmentPending": true,
+      "action": "新人送别，迎宾协助礼物、寄存物品及交通指引。送客镜头由摄影另行核对合同。",
+      "steps": [],
+      "startSignal": "到计划时段且上游准备完成，按统筹现场安排开始。",
+      "handoff": "21:00 向统筹或晚班负责人交接。",
+      "supplies": [
+        "礼物及寄存清单"
+      ],
+      "helperDuty": "",
+      "source": "晚宴与送客"
+    },
+    {
+      "id": "teardown",
+      "stage": "close",
+      "title": "撤场及交接",
+      "start": "2027-01-02T21:00:00+08:00",
+      "end": null,
+      "kind": "open",
+      "location": "venue",
+      "lead": "coordinator",
+      "withRoles": [
+        "restaurant",
+        "decor",
+        "helpers"
+      ],
+      "status": "待确认",
+      "optional": false,
+      "assignmentPending": false,
+      "action": "统筹或晚班负责人与餐厅点交礼服、戒指、礼金及设备。布置按合同撤场，餐厅验收并登记完成时间。",
+      "steps": [],
+      "startSignal": "21:00 交接，完成时限按合同。",
+      "handoff": "餐厅验收并登记完成时间。",
+      "supplies": [
+        "礼服",
+        "戒指",
+        "礼金",
+        "设备",
+        "撤场登记表"
+      ],
+      "helperDuty": "物资点交协助，分工待确认",
+      "source": "晚宴与送客"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "venue-access",
+      "due": "2026-12-03",
+      "owners": [
+        "restaurant",
+        "couple"
+      ],
+      "ownerLabel": "新人及餐厅",
+      "deliverable": "签认准入、午市、准备室、撤场时限及加时费用，确认雨备容量和供应商覆盖时长。",
+      "status": "待确认",
+      "notes": "场地、开放及供应商班次待合同确认。",
+      "relatedTasks": [
+        "opening",
+        "coordinator-arrival",
+        "setup",
+        "decor-arrival",
+        "makeup",
+        "teardown"
+      ],
+      "source": "婚礼前确认清单"
+    },
+    {
+      "id": "ceremony-details",
+      "due": "2026-12-12",
+      "owners": [
+        "coordinator",
+        "couple"
+      ],
+      "ownerLabel": "新人及统筹",
+      "deliverable": "确定仪式发言、入场曲和提示句，确认首次亮相及晚宴换装。",
+      "status": "待确认",
+      "notes": "保留仪式首次亮相为暂排。",
+      "relatedTasks": [
+        "portraits-before",
+        "groom-speech",
+        "ceremony-entrance",
+        "change"
+      ],
+      "source": "婚礼前确认清单"
+    },
+    {
+      "id": "guests-service",
+      "due": "2026-12-19",
+      "owners": [
+        "restaurant",
+        "photo"
+      ],
+      "ownerLabel": "餐厅及摄影",
+      "deliverable": "锁定宾客数、桌数、餐饮需求及出餐节奏，确认合照名单、机位和开放区域。",
+      "status": "待确认",
+      "notes": "实名名单及个人饮食信息在工作群交付。",
+      "relatedTasks": [
+        "guest-welcome",
+        "family-photos",
+        "friend-photos",
+        "dinner-seating",
+        "starter",
+        "dinner-service",
+        "table-visits"
+      ],
+      "source": "婚礼前确认清单"
+    },
+    {
+      "id": "staff-coverage",
+      "due": "2026-12-26",
+      "owners": [
+        "coordinator",
+        "restaurant",
+        "welcome",
+        "photo",
+        "styling",
+        "audio",
+        "decor",
+        "couple",
+        "helpers"
+      ],
+      "ownerLabel": "统筹及各组",
+      "deliverable": "确认到场点、负责人及替补联络信息，落实妆造留场、摄影收工、轮休和撤场交接。",
+      "status": "待确认",
+      "notes": "负责人和替补联系方式见工作群。",
+      "relatedTasks": [
+        "coordinator-arrival",
+        "decor-arrival",
+        "styling-arrival",
+        "photo-arrival",
+        "audio-arrival",
+        "welcome-arrival",
+        "welcome-ready",
+        "change",
+        "camera-setup",
+        "soundcheck",
+        "teardown"
+      ],
+      "source": "婚礼前确认清单"
+    },
+    {
+      "id": "rain-rehearsal",
+      "due": "2026-12-28",
+      "owners": [
+        "coordinator",
+        "restaurant"
+      ],
+      "ownerLabel": "统筹及餐厅",
+      "deliverable": "实测雨备切换和室内复位时长，更新定场时限、通知路线及费用。",
+      "status": "待确认",
+      "notes": "按 14:15 交付倒推定场。",
+      "relatedTasks": [
+        "weather-decision",
+        "welcome-ready",
+        "garden-seating"
+      ],
+      "source": "婚礼前确认清单"
+    },
+    {
+      "id": "supplies",
+      "due": "2026-12-30",
+      "owners": [
+        "coordinator",
+        "restaurant",
+        "welcome",
+        "photo",
+        "styling",
+        "audio",
+        "decor",
+        "couple",
+        "helpers"
+      ],
+      "ownerLabel": "新人及各组",
+      "deliverable": "核对戒指、礼服、离线音乐、游戏道具、蛋糕、礼物及物资交接清单。",
+      "status": "待确认",
+      "notes": "按启用项目核对。",
+      "relatedTasks": [
+        "rings",
+        "soundcheck",
+        "cake",
+        "free-time",
+        "teardown"
+      ],
+      "source": "婚礼前确认清单"
+    },
+    {
+      "id": "final-run",
+      "due": "2027-01-01",
+      "owners": [
+        "coordinator",
+        "restaurant",
+        "welcome",
+        "photo",
+        "styling",
+        "audio",
+        "decor",
+        "couple",
+        "helpers"
+      ],
+      "ownerLabel": "统筹及各组",
+      "deliverable": "按场地条件踩点、走位、试音，复核光线及天气，发最终执行表和打印件。",
+      "status": "待确认",
+      "notes": "复核日落和庭院实际光线。",
+      "relatedTasks": [
+        "rehearsal",
+        "couple-portraits",
+        "weather-check"
+      ],
+      "source": "婚礼前确认清单"
+    }
+  ],
+  "weather": {
+    "selected": null,
+    "decisionNote": "",
+    "timing": "按 14:15 迎宾区交付倒推。原表示例为 35 分钟切换加 10 分钟机动。实测耗时更长则提前定场，14:25 迎宾后继续复查。",
+    "options": [
+      {
+        "id": "A",
+        "name": "庭院",
+        "condition": "天气、地面和设备条件适合。",
+        "actions": "餐厅准备室内休息点及保暖物资。统筹验收座位、通道和设备。",
+        "adjustments": {
+          "audio-arrival": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "soundcheck": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "rehearsal": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "garden-seating": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "ceremony-ready": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "groom-opening": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "groom-speech": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "ceremony-entrance": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "vows": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "rings": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "exit-ceremony": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          },
+          "ceremony-buffer": {
+            "location": "a",
+            "note": "庭院通道和座位按统筹验收结果执行。"
+          }
+        }
+      },
+      {
+        "id": "B",
+        "name": "有遮蔽区",
+        "condition": "小雨，有可用遮蔽区，且餐厅确认地面及设备条件适合。",
+        "actions": "餐厅确认座位和路线，布置及音响按已测方案调整。",
+        "adjustments": {
+          "audio-arrival": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "soundcheck": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "rehearsal": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "garden-seating": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "ceremony-ready": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "groom-opening": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "groom-speech": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "ceremony-entrance": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "vows": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "rings": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "exit-ceremony": {
+            "location": "b-photo",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "ceremony-buffer": {
+            "location": "b",
+            "note": "按有遮蔽区方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "group-photo": {
+            "location": "b-photo",
+            "note": "替代机位、站位和集合路线待确认。"
+          },
+          "family-photos": {
+            "location": "b-photo",
+            "note": "替代机位、站位和集合路线待确认。"
+          },
+          "friend-photos": {
+            "location": "b-photo",
+            "note": "替代机位、站位和集合路线待确认。"
+          },
+          "welcome-ready": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          },
+          "guest-welcome": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          },
+          "guest-rest": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          },
+          "dinner-seating": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          }
+        }
+      },
+      {
+        "id": "C",
+        "name": "室内",
+        "condition": "较大降雨、强风，或庭院及遮蔽区条件不适合。",
+        "actions": "餐厅确认全员容量。若与晚宴共用区域，实测搬椅、改桌、转移音响及晚宴复位，确认宾客等候区。",
+        "adjustments": {
+          "audio-arrival": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "soundcheck": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "rehearsal": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "garden-seating": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "ceremony-ready": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "groom-opening": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "groom-speech": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "ceremony-entrance": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "vows": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "rings": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "exit-ceremony": {
+            "location": "c-photo",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "ceremony-buffer": {
+            "location": "c",
+            "note": "按室内方案执行，具体位置、通道和设备布置待确认。"
+          },
+          "group-photo": {
+            "location": "c-photo",
+            "note": "替代机位、站位和集合路线待确认。"
+          },
+          "family-photos": {
+            "location": "c-photo",
+            "note": "替代机位、站位和集合路线待确认。"
+          },
+          "friend-photos": {
+            "location": "c-photo",
+            "note": "替代机位、站位和集合路线待确认。"
+          },
+          "welcome-ready": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          },
+          "guest-welcome": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          },
+          "guest-rest": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          },
+          "dinner-seating": {
+            "note": "餐厅确认迎宾、休息及晚宴区域是否调整后，由统筹同步；当前调整细节待确认。"
+          }
+        }
+      }
+    ],
+    "nodes": [
+      {
+        "task": "weather-check",
+        "label": "天气初判"
+      },
+      {
+        "task": "weather-decision",
+        "label": "定场"
+      },
+      {
+        "task": "welcome-ready",
+        "label": "迎宾区交付"
+      },
+      {
+        "task": "guest-welcome",
+        "label": "迎宾后继续复查"
+      }
+    ],
+    "switchSteps": [
+      "统筹宣布切换。",
+      "迎宾分批引导宾客前往已确认的等候区，具体路线待确认。",
+      "餐厅协助有需要的宾客，并确认场地可用。",
+      "音响、摄影和布置调整设备及机位并回报。",
+      "统筹确认就绪后发出重开指令，同步宾客与厨房。"
+    ]
+  },
+  "handoff": {
+    "contactOrder": "先联系本组负责人或替补。涉及跨组、场地切换或延误时联系统筹，涉及出餐或场地交付时由统筹对接餐厅经理。",
+    "delay": "依次压缩自由合照、可选补拍和第二项互动，优先保留关键合照、新人换装及约定上菜时间。预计影响开餐时，由统筹和餐厅经理另定开餐信号并通知宾客。",
+    "distribution": "负责人及替补联系方式、详细场地动线和合照名单在微信群单独分发。"
+  },
+  "light": "原表参考：2027 年当日日落预计约 17:53，民用暮光约 18:17 结束。待摄影踩点核实。",
+  "milestones": [
+    {
+      "from": "coordinator-arrival",
+      "label": "场地开放"
+    },
+    {
+      "from": "guest-welcome",
+      "label": "迎宾与自由参观"
+    },
+    {
+      "from": "groom-opening",
+      "through": "ceremony-buffer",
+      "label": "仪式"
+    },
+    {
+      "from": "group-photo",
+      "through": "friend-photos",
+      "label": "全体及分组合照"
+    },
+    {
+      "from": "couple-portraits",
+      "label": "新人单独拍摄"
+    },
+    {
+      "from": "mingle",
+      "label": "新人回到宾客中"
+    },
+    {
+      "from": "change",
+      "label": "新人换装补妆"
+    },
+    {
+      "from": "dinner-entry",
+      "label": "晚宴入场与欢迎"
+    },
+    {
+      "from": "thanks",
+      "label": "致谢与收尾曲"
+    },
+    {
+      "from": "farewell",
+      "label": "送客"
+    },
+    {
+      "from": "teardown",
+      "label": "撤场交接"
+    }
+  ]
+}

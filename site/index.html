@@ -1,0 +1,53 @@
+
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="广州庭院婚礼公开执行表。按岗位查看当天流程、婚前确认和现场预案。">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#FFFDF8">
+  <title>广州庭院婚礼执行台</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <a class="skip" href="#main">跳到主要内容</a>
+  <header class="masthead">
+    <div class="wrap">
+      <div class="mast-row">
+        <p class="eyebrow">婚礼执行台 <span>／</span> 公开执行表</p>
+        <details id="more" class="more" hidden>
+          <summary>更多操作</summary>
+          <div class="menu">
+            <button id="history-button" type="button">更新记录</button>
+            <button id="share" type="button">复制当前链接</button>
+            <button id="print" type="button">打印当前视图</button>
+          </div>
+        </details>
+      </div>
+      <h1 id="title">广州庭院婚礼</h1>
+      <p id="event-date" class="event-date"></p>
+      <p id="revision" class="revision"></p>
+      <div id="site-status" class="site-status" role="status">正在载入排程…</div>
+      <aside id="updates" class="notice" aria-live="polite" hidden></aside>
+      <p id="share-status" class="feedback" role="status"></p>
+      <noscript><p>请启用 JavaScript，或向统筹索取岗位打印件。</p></noscript>
+    </div>
+  </header>
+  <main class="wrap" id="main" tabindex="-1" hidden>
+    <nav class="site-nav" aria-label="页面导航" id="navigation"></nav>
+    <div id="page"></div>
+    <section id="print-weather" class="print-only" aria-label="打印天气预案"></section>
+  </main>
+  <footer class="wrap footer" id="footer" hidden>
+    <p>开场、音乐、上菜及天气切换以统筹现场口令为准。</p>
+    <p id="last-check" aria-live="polite"></p>
+  </footer>
+  <dialog id="history" aria-labelledby="history-title">
+    <h2 id="history-title">更新记录</h2>
+    <div id="history-content"></div>
+    <form method="dialog"><button type="submit">关闭</button></form>
+  </dialog>
+</body>
+</html>

@@ -1,26 +1,42 @@
+
 # 广州庭院婚礼执行台
 
-站点面向工作人员，按北京时间展示公开脱敏排程。统筹负责发布版本。临时改时和雨备切换先发微信群口令，再更新网页。
+2027 年 1 月 2 日的手机优先执行表。所有时间使用北京时间。页面展示已发布的安排，开场、音乐、上菜、开餐调整及天气切换由统筹在工作群和对讲中发出口令。
 
-## 本地预览
+## 本地预览和检查
 
-在本目录运行 `python -m http.server 8000 --bind 127.0.0.1`，打开 `http://127.0.0.1:8000/`。音响岗位示例为 `http://127.0.0.1:8000/?role=audio`。站点通过 HTTP 读取排程文件。
+在本目录运行以下命令。Node.js 24 用于数据校验，网页本身只需要静态 HTTP 服务。
 
-## 更新执行表
+```sh
+node scripts/check.mjs
+python -m http.server 8000 --bind 127.0.0.1 --directory site
+```
 
-- 编辑 `schedule.json`。任务按开始时间填写，使用 24 小时制。时间段填 `start` 与 `end`，单个节点只填 `start`，从某时开始但结束时间未定的任务额外填 `ongoing: true`。
-- 每条任务在 `lead` 填负责岗位，在 `with` 填协作岗位。总览和岗位页共用任务，已分发链接依赖岗位键名。
-- 定场后将 `weather.selected` 改为 `"A"`、`"B"` 或 `"C"`，将可公开的口令摘要写入 `weather.decisionNote`。待定时使用 `null`。
-- 更新 `version.updatedAt`，使用带 `+08:00` 的 ISO 时间。用 `version.summary` 说明本次变更。确认项完成后更新对应的 `status`。
-- 运行 `node check-schedule.mjs` 检查任务编号、时间、岗位引用和雨备方案。
-- 提交前核对所有公开文件和版本历史。原始 Word、具体场地、姓名电话、宾客名单及具体动线留在微信群等私下资料中。
+在浏览器打开 [本地总览](http://127.0.0.1:8000/#/day) 或 [音响入场任务](http://127.0.0.1:8000/#/day?role=audio&task=ceremony-entrance)。站点文件位于 `site/`，所有资源采用相对地址。
 
-## 发布与分发
+## 维护排程
 
-1. 将本目录作为独立 GitHub 仓库的根目录，仓库名使用 `wedding-run-sheet`。只提交本目录下经审阅的站点文件。
-2. 推送 `main` 后，在 **Settings → Pages → Build and deployment** 选择 **Deploy from a branch**，保存 **main / (root)**。等待 Pages 部署成功。
-3. 在未登录的浏览器验证 `https://<账号>.github.io/wedding-run-sheet/`，再用微信分别测试移动网络和场地 Wi-Fi。
-4. 婚礼前一天逐组打开岗位，点击「复制链接」发到对应群。点击「打印排程」生成带版本日期的岗位打印件。
-5. 当天出现变更时，统筹先发受影响岗位、生效时间和新口令。提交修订后检查 Pages 部署结果，再刷新总览和受影响岗位链接核对同一版本。
+排程集中在 `site/data/wedding.json`。编辑后提交 Pull Request 或推送至 `main`。工作流检查字段、时间、引用、版本和公开文件，同时报告同一主责的重叠时段。
 
-[GitHub Pages 发布源配置](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+| 修改事项 | 对应字段 |
+|---|---|
+| 时间和任务 | 在 `tasks` 中使用 `2027-01-02T15:29:00+08:00` 格式。持续任务使用 `kind: "range"` 和完整结束时间。单节点使用 `"point"`，结束未定使用 `"open"`，两者的 `end` 均为 `null`。 |
+| 地点和岗位 | `location` 引用 `locations` 中的 ID。修改 `lead` 和 `withRoles` 可同步更新岗位视图。实际职责待确认时保留 `assignmentPending: true`。 |
+| 状态和物资 | 可选项目设 `optional: true`。只有维护者确认完成后才将 `status` 改为 `"已完成"`。步骤、开始条件、交接与物资分别在 `steps`、`startSignal`、`handoff` 和 `supplies` 中维护。 |
+| 婚前确认 | 在 `checklist` 改状态或备注，查看 `relatedTasks` 并同步修订受影响的当天任务。 |
+| 天气切换 | 统筹先下达现场指令。将 `weather.selected` 设为 `"A"`、`"B"` 或 `"C"`，在 `decisionNote` 记录公开口令摘要。等待决定时使用 `null`。在相应方案的 `adjustments` 按任务 ID 更新 `location`、`start`、`end` 或 `note`。未知位置、容量、动线继续标为待确认。 |
+| 更新版本 | 将上一版的 `version`、`updatedAt` 和 `changes` 放入 `release.history` 开头，填写新版 `YYYYMMDD-NN`、带 `+08:00` 的更新时间以及具体变更。 |
+
+改标题或时间时保留任务 ID。工作人员打开网页后按版本提示更新，也可以刷新原岗位链接。
+
+原始 Word、私人联络信息、具体动线、实名名单和个人饮食资料由工作群管理。只将经过核对的公开内容提交至仓库。检查工具识别常见完整电话号码和邮箱，姓名与其他私密内容需要人工核对。
+
+## 发布和恢复
+
+1. 在仓库 **Settings → Pages → Build and deployment** 选择 **GitHub Actions**，并开启 **Enforce HTTPS**。
+2. 合并至 `main` 后，`.github/workflows/pages.yml` 依次检查、打包 `site/`、发布到 `github-pages` 环境。部署步骤提供访问地址。
+3. 用无登录窗口验证首页、更新时间和音响任务分享链接。工作人员在更多操作中可打印当前岗位排程。
+4. 若检查失败，修正后重新提交。若发布了错误排程，使用 `git revert <提交>` 并推送。恢复历史排程原样内容仍须通过数据检查。涉及多次变更时，也可以在当前版本基础上恢复正确排程并发布新版本。
+5. 重新核对总览和受影响岗位。现场急变先发工作群与对讲，等部署完成后核对网页版本。
+
+[GitHub Pages 自定义工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) · [HTTPS 设置](https://docs.github.com/en/pages/getting-started-with-github-pages/securing-your-github-pages-site-with-https)

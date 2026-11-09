@@ -1,0 +1,71 @@
+
+name: Check and publish wedding schedule
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: wedding-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check schedule and site
+        env:
+          BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          node --check site/app.mjs
+          FILE=site/data/wedding.json
+          CURRENT=$(git hash-object "$FILE")
+          if [[ -n "$BASE" ]] && git cat-file -e "$BASE^{commit}" 2>/dev/null &&
+            git log --format=%H "$BASE" -- "$FILE" | while read -r rev; do git rev-parse "$rev:$FILE" 2>/dev/null || true; done | grep -Fx "$CURRENT" >/dev/null; then
+            echo "Schedule matches an earlier commit. Checking restored content."
+            node scripts/check.mjs
+          elif [[ -n "$BASE" ]] && git show "$BASE:$FILE" > "$RUNNER_TEMP/previous.json" 2>/dev/null; then
+            node scripts/check.mjs "$RUNNER_TEMP/previous.json"
+          else
+            node scripts/check.mjs
+          fi
+
+  package:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    needs: check
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: read
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+
+  deploy:
+    needs: package
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
