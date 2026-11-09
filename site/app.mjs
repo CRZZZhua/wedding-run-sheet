@@ -182,7 +182,7 @@ function renderLane(tasks, stageId) {
   const step = stageId === 'all' ? 30 : end - start < 90 * minute ? 10 : 15;
   const x = time => (time - start) / minute * pixels;
   const scale = element('div', 'lane-grid');
-  scale.style.setProperty('--track-width', Math.ceil(x(end)) + 'px');
+  scale.style.setProperty('--track-width', Math.ceil(x(end) + 52) + 'px');
   scale.style.setProperty('--grid-step', pixels * step + 'px');
   const axis = element('div', 'lane-track lane-axis');
   const axisClock = new Intl.DateTimeFormat('zh-CN', {timeZone: data.wedding.timezone, hour: '2-digit', minute: '2-digit', hourCycle: 'h23'});
