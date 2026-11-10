@@ -416,7 +416,8 @@ function renderPage() {
   if (page === 'checklist') renderChecklist(content);
   if (page === 'contingency') content.append(element('h2', '', '现场预案'), contingencyContent());
   if (page === 'team') renderTeam(content);
-  byId('print-weather').hidden = page === 'contingency';
+  if (page === 'activities') content.append(byId('activities-template').content.cloneNode(true));
+  byId('print-weather').hidden = page === 'contingency' || page === 'activities';
   paintTime();
 }
 

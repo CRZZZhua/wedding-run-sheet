@@ -148,7 +148,8 @@ for (const plan of data.weather.options) {
 required(data.handoff, 'contactOrder delay distribution', '交接');
 for (const key of ['contactOrder', 'delay', 'distribution']) string(data.handoff[key], '交接 ' + key);
 
-const allowedFiles = ['.nojekyll', 'app.mjs', 'data/wedding.json', 'index.html', 'model.mjs', 'style.css'];
+const publicText = ['.nojekyll', 'app.mjs', 'data/wedding.json', 'index.html', 'model.mjs', 'style.css'];
+const activityImages = ['images/gift-boxes.jpg', 'images/lyric-cards.jpg', 'images/photo-missions.jpg', 'images/shared-flowers.jpg'];
 function publicFiles(dir = 'site') {
   return readdirSync(dir, {withFileTypes: true}).flatMap(entry => {
     assert(!entry.isSymbolicLink(), '发布目录不可含符号链接 ' + entry.name);
@@ -156,8 +157,8 @@ function publicFiles(dir = 'site') {
     return entry.isDirectory() ? publicFiles(path) : [path.slice(5)];
   });
 }
-assert.deepEqual(publicFiles().sort(), allowedFiles);
-for (const path of allowedFiles) {
+assert.deepEqual(publicFiles().sort(), [...publicText, ...activityImages].sort());
+for (const path of publicText) {
   const content = readFileSync('site/' + path, 'utf8');
   assert(!/(?<![\d-])1[3-9]\d(?:[ -]?\d){8}(?![\d-])|(?:\+86[ -]?)?(?:\(0\d{2,3}\)|0\d{2,3}-)\d{7,8}|[\w.%+-]+@[\w.-]+\.[A-Za-z]{2,}/.test(content),
     '公开资源疑似包含完整电话号码或邮箱 ' + path);
@@ -208,6 +209,7 @@ assert.deepEqual(route(href('day', 'audio', entrance.id), data), {page:'day', ro
 assert.equal(route('#/day?role=bad&task=invalid', data).role, '');
 assert.equal(route('#/day?role=bad&task=invalid', data).task, 'invalid');
 assert.equal(route('#task-bride-entry', data, '?role=audio').task, entrance.id);
+assert.deepEqual(route(href('activities'), data), {page:'activities', role:'', task:''});
 const eventDay = data.wedding.date;
 const time = str => Date.parse(eventDay + 'T' + str + ':00+08:00');
 assert.equal(timeLabel(entrance), entrance.start.slice(11, 16) + '–' + entrance.end.slice(11, 16));

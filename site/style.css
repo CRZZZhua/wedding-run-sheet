@@ -220,6 +220,25 @@ button:hover { border-color: var(--green); }
 .weather-plan p { margin: 0 .5rem .6rem; }
 .instructions ol { padding-left: 1.3rem; }
 .role-card { margin-bottom: .65rem; padding: .75rem; }
+.activities-intro { padding-block: .65rem clamp(1.25rem, 3vw, 2.25rem); }
+.activities-intro h2 { margin-block: .35rem .55rem; font-size: clamp(2rem, 5vw, 3.25rem); }
+.activities-intro > p:last-child { color: var(--muted); }
+.activity-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; align-items: start; }
+.activity { background: var(--surface); border: 1px solid var(--line); border-radius: .8rem; overflow: hidden; }
+.activity img { display: block; width: 100%; height: auto; background: var(--green-soft); }
+.activity-copy { padding: clamp(.85rem, 2vw, 1.25rem); }
+.activity h3 { margin-block: .3rem .5rem; font-size: clamp(1.2rem, 2vw, 1.45rem); }
+.activity details { border-top: 1px solid var(--line); margin-top: .9rem; font-size: .925rem; }
+.activity summary { min-height: 44px; padding-block: .65rem; color: var(--green); font-weight: 700; }
+.activity summary:focus-visible { outline-offset: -2px; }
+.activity ol, .activity ul { margin: 0 0 .75rem; padding-inline-start: 1.35rem; }
+.activity li + li, .activity details p + p { margin-top: .45rem; }
+.activity blockquote { margin: .75rem 0; border-inline-start: 3px solid var(--green); background: var(--green-soft); padding: .55rem .75rem; }
+.gift-examples { width: 100%; margin-top: .75rem; border-collapse: collapse; text-align: start; }
+.gift-examples caption { text-align: start; font-weight: 700; color: var(--green); margin-bottom: .25rem; }
+.gift-examples th, .gift-examples td { padding: .35rem .4rem; border-bottom: 1px solid var(--line); text-align: start; }
+.gift-examples th { background: var(--green-soft); }
+.gift-examples th:last-child { width: 36%; }
 .footer { margin-top: 1.5rem; padding-block: .8rem 1.4rem; border-top: 1px solid var(--line); font-size: .875rem; }
 dialog { width: min(calc(100% - 2rem), 35rem); border: 1px solid var(--line); border-radius: .6rem; padding: 1rem; background: var(--paper); color: var(--ink); }
 dialog::backdrop { background: #27282070; }
@@ -233,7 +252,7 @@ dialog::backdrop { background: #27282070; }
     left: 0;
     right: 0;
     display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
     margin: 0;
     padding: .35rem .25rem calc(.35rem + env(safe-area-inset-bottom));
     background: var(--paper);
@@ -241,7 +260,7 @@ dialog::backdrop { background: #27282070; }
     box-shadow: 0 -.15rem .6rem #27282012;
   }
   .site-nav a { justify-content: center; text-align: center; padding-inline: .15rem; }
-  .weather-plans { grid-template-columns: 1fr; }
+  .weather-plans, .activity-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 440px) {
   .task-summary, .check-item { grid-template-columns: 1fr; gap: .2rem; }
@@ -260,5 +279,7 @@ dialog::backdrop { background: #27282070; }
   .task-summary { padding-block: .3rem; min-height: auto; }
   .task-heading strong::after, .stage-heading > span:first-child::before { content: none !important; }
   .task-body { padding: 0 .4rem .4rem; }
+  .activity-grid { grid-template-columns: 1fr; gap: .5rem; }
+  .activity img { display: none; }
   a { color: inherit; text-decoration: none; }
 }

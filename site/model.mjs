@@ -1,7 +1,7 @@
 
 export const roleIds = ['coordinator', 'restaurant', 'welcome', 'photo', 'styling', 'audio', 'decor', 'couple', 'helpers'];
 export const stageIds = ['prep', 'welcome', 'ceremony', 'photos', 'dinner', 'close'];
-export const pageNames = {day: '当天流程', checklist: '婚前确认', contingency: '现场预案', team: '工作人员'};
+export const pageNames = {day: '当天流程', checklist: '婚前确认', contingency: '现场预案', team: '工作人员', activities: '活动灵感'};
 export const onWeddingDay = (date, now) => now >= dayStart(date) && now < dayStart(date) + 86400000;
 export const dayStart = date => Date.parse(date + 'T00:00:00+08:00');
 export const clock = value => value.slice(11, 16);
